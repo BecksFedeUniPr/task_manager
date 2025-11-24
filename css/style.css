@@ -1,0 +1,62 @@
+/* --- Variabili Globali (Colori e Font) --- */
+:root {
+    --primary-color: #4a90e2;    /* Blu principale */
+    --primary-hover: #357abd;    /* Blu scuro per hover */
+    --bg-color: #f0f2f5;         /* Sfondo pagina */
+    --card-bg: #ffffff;          /* Sfondo del box */
+    --text-color: #333333;       /* Testo principale */
+    --text-muted: #666666;       /* Testo secondario */
+    --border-radius: 12px;       /* Arrotondamento angoli */
+    --shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Ombra soffice */
+}
+
+/* --- Reset Base --- */
+* {
+    box-sizing: border-box; /* Gestione corretta delle dimensioni */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center;     /* Centra verticalmente */
+    min-height: 100vh;       /* Occupa tutta l'altezza dello schermo */
+    padding: 20px;
+}
+
+/* --- Contenitore Principale (Card) --- */
+.task-manager-container {
+    background-color: var(--card-bg);
+    width: 100%;
+    max-width: 450px; /* Larghezza massima per non allargarsi troppo su PC */
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+/* --- Header --- */
+.task-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.task-header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.task-header p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* --- Input Group (Input + Bottone) --- */
+.input-group {
+    display: flex;
+    gap: 10px; /* Spazio tra input e bottone */
